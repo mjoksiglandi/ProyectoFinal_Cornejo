@@ -13,19 +13,27 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-// Función para iniciar sesión
+// Obtén una instancia del proveedor de autenticación de Google
+const provider = new firebase.auth.GoogleAuthProvider();
+
+// Obtén una referencia al botón de inicio de sesión
+const signInButton = document.getElementById('googleSignInButton');
+
+// Agrega un listener para el evento click en el botón de inicio de sesión
+signInButton.addEventListener('click', signInWithGoogle);
+
+// Función para iniciar sesión con Google
 function signInWithGoogle() {
-    const provider = new firebase.auth.GoogleAuthProvider();
-    firebase.auth().signInWithPopup(provider)
-      .then((result) => {
-        // Inicio de sesión exitoso, puedes redirigir al usuario a otra página o realizar otras acciones.
-        const user = result.user;
-        console.log("Inicio de sesión exitoso:", user);
-      })
-      .catch((error) => {
-        // Error durante el inicio de sesión
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.error("Error durante el inicio de sesión:", errorCode, errorMessage);
-      });
-  }
+  firebase.auth()
+    .signInWithPopup(provider)
+    .then((result) => {
+      // Información del usuario autenticado
+      const user = result.user;
+      console.log(user);
+      // Puedes redirigir a otra página aquí
+    })
+    .catch((error) => {
+      // Manejo de errores
+      console.error(error);
+    });
+}
