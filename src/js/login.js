@@ -1,6 +1,3 @@
-const firebase = require('firebase/compat/app');
-require('firebase/compat/auth');
-
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyAaYszeyqjqXSpwlovU9RrvOKCbd1wFWoc",
