@@ -9,6 +9,7 @@ const firebaseConfig = {
   appId: "1:1010689914185:web:ccaea182f9c8aff4179698"
 };
 
+
 firebase.initializeApp(firebaseConfig);
 
 // Obtén una instancia del proveedor de autenticación de Google
