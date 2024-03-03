@@ -1,0 +1,14 @@
+{
+  "name": "entrega_final_js",
+  "version": "1.0.0",
+  "description": "proyecto final curso js coder",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Gormm",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^10.8.1"
+  }
+}
