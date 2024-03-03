@@ -12,20 +12,18 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 // Función para iniciar sesión
-function signIn() {
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-
-    firebase.auth().signInWithEmailAndPassword(email, password)
-        .then((userCredential) => {
-            // Inicio de sesión exitoso
-            const user = userCredential.user;
-            window.location.href = "dashboard.html"; // Redirecciona a la página de dashboard
-        })
-        .catch((error) => {
-            // Error durante el inicio de sesión
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            alert("Error: " + errorMessage);
-        });
-}
+function signInWithGoogle() {
+    const provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(provider)
+      .then((result) => {
+        // Inicio de sesión exitoso, puedes redirigir al usuario a otra página o realizar otras acciones.
+        const user = result.user;
+        console.log("Inicio de sesión exitoso:", user);
+      })
+      .catch((error) => {
+        // Error durante el inicio de sesión
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.error("Error durante el inicio de sesión:", errorCode, errorMessage);
+      });
+  }
