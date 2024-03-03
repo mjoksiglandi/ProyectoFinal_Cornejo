@@ -1,0 +1,22 @@
+.card {
+    margin-bottom: 30px;
+    overflow: hidden;
+    border: 2px solid #333;
+    border-radius: 10px;
+    
+    img {
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    
+    .card-body {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      height: 130px;
+    }
+  }

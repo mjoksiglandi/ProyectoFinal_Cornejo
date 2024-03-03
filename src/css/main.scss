@@ -1,0 +1,23 @@
+main {
+    padding: 20px;
+    background-color: #030003;
+    
+    .row {
+      margin-top: 50px;
+    }
+    
+    .text-body-services {
+      color: #666;
+    }
+    
+    .btn-primary {
+      background-color: #444;
+      border-color: #333;
+      
+      &:hover, &:focus {
+        color: #fff;
+        background-color: #666;
+        border-color: #444;
+      }
+    }
+  }

@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #000000;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  text-align: center;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+}
+nav .navbar-nav .nav-link {
+  background-color: #333;
+  color: #fff;
+}
+nav .navbar-nav .nav-link:hover {
+  background-color: #444;
+  color: #fff;
+}
+nav .navbar-nav .nav-link.active.dropdown-toggle::after {
+  border-top-color: #000000;
+}
+nav .dropdown-menu {
+  background-color: #333;
+}
+nav .dropdown-menu .dropdown-item {
+  background-color: #333;
+  color: #fff;
+}
+nav .dropdown-menu .dropdown-item:hover {
+  background-color: #444;
+  color: #fff;
+}
+nav .dropdown-menu .dropdown-item.active, nav .dropdown-menu .dropdown-item:active {
+  background-color: #000307;
+  color: #fff;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}/*# sourceMappingURL=base.css.map */

@@ -1,0 +1,19 @@
+main {
+  padding: 20px;
+  background-color: #030003;
+}
+main .row {
+  margin-top: 50px;
+}
+main .text-body-services {
+  color: #666;
+}
+main .btn-primary {
+  background-color: #444;
+  border-color: #333;
+}
+main .btn-primary:hover, main .btn-primary:focus {
+  color: #fff;
+  background-color: #666;
+  border-color: #444;
+}/*# sourceMappingURL=main.css.map */

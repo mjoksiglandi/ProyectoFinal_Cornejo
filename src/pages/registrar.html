@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System with Bootstrap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" href="./media/favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg rounded" aria-label="Twelfth navbar example">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+                <span><img src="../media/icon/raccoon.png" alt="menu" height="32px"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Acerca de</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Galeria</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./cosplay.html">Cosplay</a></li>
+                      <li><a class="dropdown-item" href="./props.html">Props</a></li>
+                      <li><a class="dropdown-item" href="./wild.html">vida silvestre</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../pages/logging.html" class="btn btn-secondary">loggin</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      </header>
+
+
+
+      <div class="card-body">
+        <div class="container mt-5">
+          <div class="row justify-content-center"> <!-- Agregar clase para centrar horizontalmente -->
+            <div class="col-md-6"> <!-- Establecer el ancho de la tarjeta -->
+              <h2>Add New User</h2>
+              <form id="addUserForm">
+                  <div class="mb-3">
+                      <label for="newUsername" class="form-label">Username:</label>
+                      <input type="text" class="form-control" id="newUsername" name="newUsername">
+                  </div>
+                  
+                  <div class="mb-3">
+                      <label for="newPassword" class="form-label">Password:</label>
+                      <input type="password" class="form-control" id="newPassword" name="newPassword">
+                  </div>
+      
+                  <div class="mb-3">
+                      <label for="newEmail" class="form-label">Email:</label>
+                      <input type="email" class="form-control" id="newEmail" name="newEmail">
+                  </div>
+                  
+                  <button type="button" class="btn btn-primary" onclick="addNewUser()">Add User</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+<footer class="text-white text-center py-3">
+    <div class="container">
+        &copy; Trashpanda Garage.
+        <a href="https://www.instagram.com/gormm___/" target="_blank">
+          <img src="../media/Instagram-Icon.png" alt="instagram logo">
+        </a>
+    </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="../js/loggin.js"></script>
+</body>
+</html>
