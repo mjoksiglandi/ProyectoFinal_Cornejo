@@ -21,38 +21,38 @@ const auth = firebase.auth();
 
 // Función para iniciar sesión
 function login() {
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    
-    auth.signInWithEmailAndPassword(email, password)
-        .then((userCredential) => {
-            // Usuario inició sesión correctamente
-            const user = userCredential.user;
-            console.log('Usuario autenticado:', user);
-        })
-        .catch((error) => {
-            // Error al iniciar sesión
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            console.error('Error al iniciar sesión:', errorMessage);
-        });
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+  
+  auth.signInWithEmailAndPassword(email, password)
+      .then((userCredential) => {
+          // Usuario inició sesión correctamente
+          const user = userCredential.user;
+          console.log('Usuario autenticado:', user);
+      })
+      .catch((error) => {
+          // Error al iniciar sesión
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          console.error('Error al iniciar sesión:', errorMessage);
+      });
 }
 
 // Función para registrarse
 function registrar() {
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    
-    auth.createUserWithEmailAndPassword(email, password)
-        .then((userCredential) => {
-            // Usuario registrado correctamente
-            const user = userCredential.user;
-            console.log('Usuario registrado:', user);
-        })
-        .catch((error) => {
-            // Error al registrar usuario
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            console.error('Error al registrar usuario:', errorMessage);
-        });
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+  
+  auth.createUserWithEmailAndPassword(email, password)
+      .then((userCredential) => {
+          // Usuario registrado correctamente
+          const user = userCredential.user;
+          console.log('Usuario registrado:', user);
+      })
+      .catch((error) => {
+          // Error al registrar usuario
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          console.error('Error al registrar usuario:', errorMessage);
+      });
 }
