@@ -11,5 +11,5 @@ function signInWithGoogle() {
         // Se ha producido un error
         console.error('Error al iniciar sesión:', error);
       });
+      console.log(firebase);  
   }
-  console.log(firebase);  
