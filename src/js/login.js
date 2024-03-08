@@ -1,9 +1,3 @@
-// import firebase from "firebase/compat/app";
-// import "firebase/compat/auth";
-// import "firebase/compat/firestore";
-
-
-
 // Función para iniciar sesión con Google
 function signInWithGoogle() {
     const provider = new firebase.auth.GoogleAuthProvider();
@@ -18,3 +12,4 @@ function signInWithGoogle() {
         console.error('Error al iniciar sesión:', error);
       });
   }
+  
