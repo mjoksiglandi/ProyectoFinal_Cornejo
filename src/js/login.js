@@ -12,4 +12,4 @@ function signInWithGoogle() {
         console.error('Error al iniciar sesión:', error);
       });
   }
-  
+  console.log(firebase);  
