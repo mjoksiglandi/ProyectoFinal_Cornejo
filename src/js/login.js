@@ -17,7 +17,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 // Obtén una referencia al servicio de autenticación
-const auth = firebase.auth();
+const auth = firebase.auth().signInWithPopup();
 
 // Función para iniciar sesión
 function login() {
