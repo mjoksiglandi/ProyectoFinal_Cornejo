@@ -17,8 +17,8 @@ const analytics = getAnalytics(app);
 const auth = getAuth();
 
 export class ManageAccount {
-  register(email, password) {
-    createUserWithEmailAndPassword(auth, email, password)
+  register(email, password, displayName) {
+     createUserWithEmailAndPassword(auth, email, password)
       .then((_) => {
         window.location.href = "login.html";
         alert("Registro exitoso. Serás redirigido a la página de inicio de sesión.");
