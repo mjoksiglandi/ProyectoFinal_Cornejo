@@ -7,8 +7,8 @@ document.getElementById("loginForm").addEventListener("submit", (event) => {
   const password = document.getElementById("password").value;
 
   const account = new ManageAccount();
-  account.authenticate(email, password);
-  
+  account.register(email, password);
+
 });
 
-console.log('Formulario de Inicio de Sesión');
+console.log('Formulario de Registro');
